@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjany Space</title>
+    <!-- Google Fonts untuk tampilan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-pastel: #FFD1DC;
+            --kuning-pastel: #FFF9C4;
+            --pink-deep: #F8BBD0;
+            --text-color: #5D4037;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--kuning-pastel);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section & Logo */
+        header {
+            background-color: var(--pink-pastel);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 8px solid white;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: white;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .site-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.8rem;
+            color: #D81B60;
+            text-shadow: 2px 2px white;
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 800px;
+            margin: -30px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #E91E63;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            border-bottom: 2px dashed var(--pink-pastel);
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Pendidikan List */
+        .edu-list {
+            list-style: none;
+        }
+
+        .edu-item {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: var(--kuning-pastel);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .edu-number {
+            background: var(--pink-pastel);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 0.9rem;
+            color: #D81B60;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #E1306C; /* Instagram Color */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            background-color: #C13584;
+        }
+
+        /* Decorations */
+        .floating-sparkle {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .site-title { font-size: 2rem; }
+            .logo-circle { width: 120px; height: 120px; }
+            header { padding: 40px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <div class="logo-circle">
+                <!-- Menggunakan proxy thumbnail Google Drive agar gambar bisa tampil langsung -->
+                <img src="https://drive.google.com/thumbnail?id=1GSnFeM8XnadhvLqdGmH65VgT2oO-JHZ4&sz=w500" alt="Logo Anjany Space">
+            </div>
+            <h1 class="site-title">Anjany Space</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Beranda / Tentang Saya -->
+        <section id="beranda">
+            <h2>✨ Tentang Saya</h2>
+            <p>Halo! Perkenalkan nama saya <strong>Sukma Ayu Anjany</strong>, biasanya dipanggil sukma/mamol (kalau udah deket banget ya). Aku anak kedua dari 2 bersaudara. Kalau mau kenal lebih dekat bisa liat web disini yaa. Enjoyy~~</p>
+            
+            <p><strong>📍 Tempat, Tanggal Lahir:</strong> Magetan, 24 Maret 2008</p>
+            <p><strong>🎨 Hobi:</strong> Nonton film khususnya film <em>romcoms</em> dan mendengarkan musik.</p>
+        </section>
+
+        <!-- Pendidikan -->
+        <section id="pendidikan">
+            <h2>🎓 Pendidikan</h2>
+            <ul class="edu-list">
+                <li class="edu-item"><span class="edu-number">1</span> Paud (Al-Uswah)</li>
+                <li class="edu-item"><span class="edu-number">2</span> TK (Al-Uswah)</li>
+                <li class="edu-item"><span class="edu-number">3</span> TKB (Al-Uswah)</li>
+                <li class="edu-item"><span class="edu-number">4</span> SD (Al-Uswah)</li>
+                <li class="edu-item"><span class="edu-number">5</span> SMP (SMPN 1 Magetan)</li>
+                <li class="edu-item"><span class="edu-number">6</span> SMA (SMAN 1 Magetan)</li>
+            </ul>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak">
+            <h2>📱 Kontak</h2>
+            <p>Mari berteman lebih dekat!</p>
+            <a href="https://instagram.com/sukmayuajny" target="_blank" class="contact-btn">
+                Instagram: @sukmayuajny
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Anjany Space | Made with ✨
+    </footer>
+
+</body>
+</html>
